@@ -1265,3 +1265,7 @@ h6 {
 .find-btn1{
 	display :inline-block;
 }
+
+#check-btn { display: none; }
+#check-btn:checked ~ .menubars { display: block; } 
+.menubars { display: none; }

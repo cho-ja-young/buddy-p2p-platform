@@ -541,14 +541,14 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Horizontal Form</h5>
+              <h5 class="card-title"><b>조자영 버디</b>님의 신용등급</h5>
 
               <!-- Horizontal Form -->
-              <form>
+              <form name="submitform" action="/prediction" method="post"> 
                 <div class="row mb-3">
-                  <label for="inputEmail3" class="col-sm-2 col-form-label">Your Name</label>
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">이름</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputText">
+                    <input type="text" id="inputText" name="inputText" class="form-control">
                   </div>
                 </div>
                 <div class="row mb-3">
@@ -558,58 +558,44 @@
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">비밀번호</label>
                   <div class="col-sm-10">
                     <input type="password" class="form-control" id="inputPassword">
                   </div>
                 </div>
-                <fieldset class="row mb-3">
-                  <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                  <div class="col-sm-10">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                      <label class="form-check-label" for="gridRadios1">
-                        First radio
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                      <label class="form-check-label" for="gridRadios2">
-                        Second radio
-                      </label>
-                    </div>
-                    <div class="form-check disabled">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                      <label class="form-check-label" for="gridRadios3">
-                        Third disabled radio
-                      </label>
-                    </div>
-                  </div>
-                </fieldset>
-                <div class="row mb-3">
-                  <div class="col-sm-10 offset-sm-2">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck1">
-                      <label class="form-check-label" for="gridCheck1">
-                        Example checkbox
-                      </label>
-                    </div>
-                  </div>
-                </div>
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                  <button type="reset" class="btn btn-secondary">Reset</button>
+                  <button id="realbutton" type="submit" class="btn btn-success find-btn1">확인</button>
+
+                  <input id="check-btn" type="checkbox" />
+                  <label for="check-btn">&nbsp&nbsp더보기</label>
+                    <ul class="menubars">
+                      <br>
+                      <div class="card">
+                        <br>
+                        <h4 class="card-title"><b>조자영 버디</b>님의 신용 등급</h4>
+                        <img src="assets/img/card.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card with an image on top</h5>
+                          <p class="card-text">8,000,000원까지 대출이 가능합니다.</p>
+                        </div>
+                      </div>
+                    </ul>   
+
                 </div>
               </form><!-- End Horizontal Form -->
 
             </div>
-          </div>
+          </div>  
 
+
+
+          <!--
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Multi Columns Form</h5>
-
+            -->
               <!-- Multi Columns Form -->
+              <!--
               <form class="row g-3">
                 <div class="col-md-12">
                   <label for="inputName5" class="form-label">Your Name</label>
@@ -658,8 +644,10 @@
                   <button type="submit" class="btn btn-primary">Submit</button>
                   <button type="reset" class="btn btn-secondary">Reset</button>
                 </div>
-              </form><!-- End Multi Columns Form -->
-
+              </form>
+            -->
+              <!-- End Multi Columns Form -->
+<!--
             </div>
           </div>
 
@@ -670,8 +658,9 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Vertical Form</h5>
-
+            -->
               <!-- Vertical Form -->
+              <!--
               <form class="row g-3">
                 <div class="col-12">
                   <label for="inputNanme4" class="form-label">Your Name</label>
@@ -693,16 +682,19 @@
                   <button type="submit" class="btn btn-primary">Submit</button>
                   <button type="reset" class="btn btn-secondary">Reset</button>
                 </div>
-              </form><!-- Vertical Form -->
-
+              </form>
+            -->
+              <!-- Vertical Form -->
+<!--
             </div>
           </div>
 
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">No Labels / Placeholders as labels Form</h5>
-
+            -->
               <!-- No Labels Form -->
+              <!--
               <form class="row g-3">
                 <div class="col-md-12">
                   <input type="text" class="form-control" placeholder="Your Name">
@@ -732,16 +724,19 @@
                   <button type="submit" class="btn btn-primary">Submit</button>
                   <button type="reset" class="btn btn-secondary">Reset</button>
                 </div>
-              </form><!-- End No Labels Form -->
-
+              </form>
+            -->
+              <!-- End No Labels Form -->
+<!--
             </div>
           </div>
 
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Floating labels Form</h5>
-
+            -->
               <!-- Floating Labels Form -->
+              <!--
               <form class="row g-3">
                 <div class="col-md-12">
                   <div class="form-floating">
@@ -795,12 +790,17 @@
                   <button type="submit" class="btn btn-primary">Submit</button>
                   <button type="reset" class="btn btn-secondary">Reset</button>
                 </div>
-              </form><!-- End floating Labels Form -->
-
+              </form>
+            -->
+              <!-- End floating Labels Form -->
+<!--
             </div>
           </div>
-
-        </div>
+        -->
+        
+      
+      
+      
       </div>
     </section>
 
@@ -836,5 +836,32 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+
+
+<script>
+
+  $('#realbutton').click(
+      function () {
+          $.ajax({
+              url: "http://127.0.0.1:5501/prediction",
+              type: "post",
+              dataType: 'json',
+              contentType: "application/json; charset=utf-8",
+              data: {
+                  name: $('#inputText').val()
+              },
+              success : function(data) {
+                
+                $(document).ready(function() {
+                  $('.card-body').append('<div id="fin_result" class="boarder pad"> Success!!<div>');
+                });
+              }
+          })
+      }
+  )
+
+
+</script>
+
 
 </html>
